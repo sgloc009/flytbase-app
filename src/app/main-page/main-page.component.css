@@ -1,15 +1,3 @@
-.box{
-    position: absolute;
-    border: 5px solid black;
-    min-height: 50px;
-    transition: border-color 0.2s, transform 1s;
-    width: 50px;
-}
-
-.box:focus, .box:active, .box:visited, .box.focused{
-    border-color: aqua;
-}
-
 .box-container{
     position: relative;
     border: 5px solid transparent;
