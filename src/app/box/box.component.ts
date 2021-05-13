@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { BoxService } from '../services/box.service';
 
 @Component({
   selector: 'app-box',
@@ -14,12 +15,12 @@ export class BoxComponent implements OnInit {
   @Input() public index:number = 0;
   @Output() public focusedEvent:EventEmitter<number> = new EventEmitter();
 
-  constructor() { }
+  constructor(public boxSvc: BoxService) { }
   onFocus(i:number){
-    this.focused = !this.focused;
     this.focusedEvent.emit(this.index);
   }
   ngOnInit(): void {
+    console.log(this.index);
   }
 
 }

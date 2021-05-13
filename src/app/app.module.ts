@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MainPageComponent } from './main-page/main-page.component';
 import { FormsModule } from '@angular/forms';
 import { BoxComponent } from './box/box.component'
+import { BoxService } from './services/box.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { BoxComponent } from './box/box.component'
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [BoxService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
