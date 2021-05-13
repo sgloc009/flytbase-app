@@ -52,28 +52,28 @@ export class MainPageComponent implements AfterViewInit {
         case this.KEY_CODES.a:
           if(this.listBoxes[this.currentFocused].x>0 && !this.moving){
             this.listBoxes[this.currentFocused].x -= this.moveSpeed;
-            this.container.nativeElement.children[this.currentFocused].children[0].style.transform="translate("+this.listBoxes[this.currentFocused].x+"px,"+this.listBoxes[this.currentFocused].y+"px)";
+            this.container.nativeElement.children[this.currentFocused].style.transform="translate("+this.listBoxes[this.currentFocused].x+"px,"+this.listBoxes[this.currentFocused].y+"px)";
             this.startMoving()
           }
           break;
         case this.KEY_CODES.d:
           if((this.listBoxes[this.currentFocused].x+this.box.width+10)<this.boxContainer.width  && !this.moving){
             this.listBoxes[this.currentFocused].x += this.moveSpeed;
-            this.container.nativeElement.children[this.currentFocused].children[0].style.transform="translate("+this.listBoxes[this.currentFocused].x+"px,"+this.listBoxes[this.currentFocused].y+"px)";
+            this.container.nativeElement.children[this.currentFocused].style.transform="translate("+this.listBoxes[this.currentFocused].x+"px,"+this.listBoxes[this.currentFocused].y+"px)";
             this.startMoving()
           }
           break;
         case this.KEY_CODES.w:
           if(this.listBoxes[this.currentFocused].y>0  && !this.moving){
             this.listBoxes[this.currentFocused].y -= this.moveSpeed;
-            this.container.nativeElement.children[this.currentFocused].children[0].style.transform="translate("+this.listBoxes[this.currentFocused].x+"px,"+this.listBoxes[this.currentFocused].y+"px)";
+            this.container.nativeElement.children[this.currentFocused].style.transform="translate("+this.listBoxes[this.currentFocused].x+"px,"+this.listBoxes[this.currentFocused].y+"px)";
             this.startMoving()
           }
           break;
         case this.KEY_CODES.s:
           if((this.listBoxes[this.currentFocused].y + this.box.height+10)<this.boxContainer.height  && !this.moving){
             this.listBoxes[this.currentFocused].y += this.moveSpeed;
-            this.container.nativeElement.children[this.currentFocused].children[0].style.transform="translate("+this.listBoxes[this.currentFocused].x+"px,"+this.listBoxes[this.currentFocused].y+"px)";
+            this.container.nativeElement.children[this.currentFocused].style.transform="translate("+this.listBoxes[this.currentFocused].x+"px,"+this.listBoxes[this.currentFocused].y+"px)";
             this.startMoving()
           }
           break;

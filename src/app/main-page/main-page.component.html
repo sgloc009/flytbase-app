@@ -2,8 +2,6 @@
 <button (click)="listenerActive = !listenerActive">Movement: {{listenerActive?"On":"Off"}}</button>
 <!-- <input type="range" [(ngModel)]="moveSpeed" step="50" max="200"> -->
 <button (click)="onReset()"> Reset </button>
-<div #container class="container">
-  <div *ngFor="let box of listBoxes,let i = index" id="boxContainer{{i}}" [ngClass]="{'box-container':true,'focused':listBoxes[i].focused}">
-    <div [ngClass]="{'box':true,'focused':listBoxes[i].focused}" [ngStyle]="{'z-index':listBoxes[i].zIndex}" id="box{{i}}" (click)="onFocus(i)">{{this.box.name}}</div>
-  </div>
+<div #container class="box-container">
+    <div *ngFor="let box of listBoxes,let i = index" id="boxContainer{{i}}" [ngClass]="{'box':true,'focused':listBoxes[i].focused}" [ngStyle]="{'z-index':listBoxes[i].zIndex}" id="box{{i}}" (click)="onFocus(i)">{{this.box.name}}</div>
 </div>

@@ -1,8 +1,8 @@
 .box{
+    position: absolute;
     border: 5px solid black;
-    position: relative;
     min-height: 50px;
-    transition: 1s;
+    transition: border-color 0.2s, transform 1s;
     width: 50px;
 }
 
@@ -13,13 +13,13 @@
 .box-container{
     position: relative;
     border: 5px solid transparent;
-}
-
-.box-container.focused{
     border-color: black;
     height: 300px;
     width: 300px;
     margin-top: 20px;
+}
+
+.box-container.focused{
 }
 
 .container{
