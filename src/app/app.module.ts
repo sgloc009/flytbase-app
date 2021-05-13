@@ -7,6 +7,7 @@ import { MainPageComponent } from './main-page/main-page.component';
 import { FormsModule } from '@angular/forms';
 import { BoxComponent } from './box/box.component'
 import { BoxService } from './services/box.service';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,9 @@ import { BoxService } from './services/box.service';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [BoxService],
+  providers: [BoxService,
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
