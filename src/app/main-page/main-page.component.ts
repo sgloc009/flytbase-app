@@ -48,9 +48,6 @@ export class MainPageComponent implements AfterViewInit {
   @HostListener('window:keydown', ['$event'])
   onKeyUp(event: KeyboardEvent){
     if(this.listenerActive){
-      console.log("key");
-      console.log(event.key);
-      console.log(event.keyCode);
       switch(event.keyCode){
         case this.KEY_CODES.a:
           if(this.listBoxes[this.currentFocused].x>0 && !this.moving){
