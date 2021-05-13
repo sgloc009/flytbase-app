@@ -1,2 +1,1 @@
-<div [ngClass]="{'box':true,'focused':focused}" id="{{name}}" [ngStyle]="{transform: 'translate('+x+'px,'+y+'px)', 'z-index':zIndex}" (click)="onFocus(index)">{{this.name}}</div>
-<!-- *ngFor="let box of listBoxes,let i = index" -->
+<div [ngClass]="{'box':true,'focused':focused}" id="{{name}}" [ngStyle]="{transform: 'translate('+x+'px,'+y+'px)', 'z-index':zIndex, backgroundColor: backgroundColor}" (click)="onFocus(index)">{{this.name}}</div>
