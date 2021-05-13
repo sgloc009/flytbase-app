@@ -14,7 +14,7 @@ export class MainPageComponent implements AfterViewInit {
   public index = -1;
   public currentFocused:number = -1;
   public listenerActive = true;
-  @ViewChild('container',{read: ViewContainerRef}) public container: ViewContainerRef;
+  @ViewChild('container',{read: ViewContainerRef}) public container: any;
   public boxes:Array<Element> = [];
   // public boxList: Array<Component>
   public moving = false;
