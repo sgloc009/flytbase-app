@@ -1,0 +1,28 @@
+.box{
+    border: 5px solid black;
+    position: relative;
+    min-height: 50px;
+    transition: 1s;
+    width: 50px;
+}
+
+.box:focus, .box:active, .box:visited, .box.focused{
+    border-color: aqua;
+}
+
+.box-container{
+    position: relative;
+    border: 5px solid transparent;
+}
+
+.box-container.focused{
+    border-color: black;
+    height: 300px;
+    width: 300px;
+    margin-top: 20px;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+}
